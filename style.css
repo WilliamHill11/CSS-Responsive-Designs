@@ -25,13 +25,18 @@ body {
   background: #23424a;
   color: white;
 
-  margin: 0 auto;
-
-  padding: 10em;
+  padding: 10em 0em;
 }
 
 .intro-content {
-  width: 50%;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container__text p {
+  margin-bottom: 3em;
+  width: 60%;
 }
 
 button {
@@ -40,5 +45,4 @@ button {
   padding: 1.25em 4em;
   border-radius: 25px;
   font-weight: bold;
-  margin-top: 2em;
 }

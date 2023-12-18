@@ -12,17 +12,31 @@ body {
 
 h1 {
   font-size: 3rem;
+  margin-top: 0;
 }
 
 .container {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
+  display: flex;
+}
+
+main {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  width: 32%;
+  align-self: flex-start;
 }
 
 .row {
   /* display: flex => flex container */
   display: flex;
+  gap: 100px;
+  /* justify-content: space-between; */
 
   /* can't use yet */
   /* gap: 100px; */
@@ -40,7 +54,8 @@ h1 {
 }
 
 .hero__text {
-  width: 60%;
+  margin-top: 0;
+  flex-direction: column;
 }
 
 .hero p {
@@ -74,6 +89,15 @@ h1 {
   align-items: center;
 }
 
-.wrapper {
+.three-col {
+  padding: 3em 0em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-col {
   background: #136c72;
+  padding: 3em 0em;
+  text-align: center;
 }

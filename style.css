@@ -19,16 +19,17 @@ h1 {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
 }
 
-main {
-  display: flex;
+.main {
+  margin-top: 3em;
 }
 
 img {
   max-width: 100%;
-  width: 32%;
+}
+
+.hero__img {
   align-self: flex-start;
 }
 
@@ -82,12 +83,24 @@ img {
   color: #87629a;
 }
 
-.col {
+.primary-content {
+  width: 62%;
+}
+
+.sidebar {
+  width: 32%;
+  text-align: center;
+  color: white;
+  background: #136c72;
+  padding: 1em;
+}
+
+/* .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .three-col {
   padding: 3em 0em;

@@ -1,3 +1,13 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+   1. Get all the navigation items next to one another
+   2. Add a space between all the items
+*/
+
 *,
 *::before,
 *::after {
@@ -10,57 +20,17 @@ body {
   font-size: 1.3rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 3rem;
   margin-top: 0;
 }
 
-.container {
-  width: 80%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.main {
-  margin-top: 3em;
-}
-
-img {
-  max-width: 100%;
-}
-
-.hero__img {
-  align-self: flex-start;
-}
-
-.row {
-  /* display: flex => flex container */
-  display: flex;
-  gap: 100px;
-  /* justify-content: space-between; */
-
-  /* can't use yet */
-  /* gap: 100px; */
-}
-
-.col {
-  /* these are now flex items */
-  width: 100%;
-}
-
-.hero {
-  padding: 100px 0;
-  background-color: #23424a;
-  color: #fff;
-}
-
-.hero__text {
-  margin-top: 0;
-  flex-direction: column;
-}
-
-.hero p {
-  margin-bottom: 3em;
+.section-title {
+  color: #87629a;
 }
 
 .btn {
@@ -79,8 +49,82 @@ img {
   opacity: 0.75;
 }
 
-.purple {
-  color: #87629a;
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 30px;
+}
+
+header {
+  background: #136c72;
+  padding: 0.5em 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: #136c72;
+  padding: 0.25em 1em;
+  border-radius: 10em;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 62%;
+}
+
+.hero__img {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.main {
+  margin-top: 3em;
 }
 
 .primary-content {
@@ -89,28 +133,8 @@ img {
 
 .sidebar {
   width: 32%;
-  text-align: center;
-  color: white;
-  background: #136c72;
   padding: 1em;
-}
-
-/* .col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-.three-col {
-  padding: 3em 0em;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.two-col {
-  background: #136c72;
-  padding: 3em 0em;
-  text-align: center;
+  color: #fff;
+  background-color: #136c72;
 }

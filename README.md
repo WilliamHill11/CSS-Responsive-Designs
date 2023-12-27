@@ -3,3 +3,4 @@
 - Flexbox
 - Using width %
 - No Fixed width/height
+- Responsive Design

@@ -4,3 +4,4 @@
 - Using width %
 - No Fixed width/height
 - Responsive Design
+- grid 

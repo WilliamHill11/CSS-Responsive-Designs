@@ -5,3 +5,4 @@
 - No Fixed width/height
 - Responsive Design
 - CSS Grid
+- Media queries

@@ -6,4 +6,3 @@
 - Responsive Design
 - CSS Grid
 - Media queries
-- Meta view ports
